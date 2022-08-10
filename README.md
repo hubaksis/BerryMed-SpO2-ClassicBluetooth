@@ -1,20 +1,6 @@
----
-name: Xamarin.Android - Bluetooth Chat
-description: "Port of the Android BluetoothChat sample. It demonstrates using the Bluetooth APIs to create a sample chat client"
-page_type: sample
-languages:
-- csharp
-products:
-- xamarin
-extensions:
-    tags:
-    - bluetooth
-urlFragment: bluetoothchat
----
-# Bluetooth Chat
 
-This is a port of the [Android BluetoothChat sample](https://github.com/googlesamples/android-BluetoothChat).
+Based on Xamarin.Android - Bluetooth Chat example
 
-It demonstrates using the Bluetooth APIs to create a sample chat client.
+This is an app that shows SpO2 from an old classic bluetooth device BerryMed without a screen.
 
-This sample has a MinSDK of API level 23 (Android 6.0) and targets API level 27 (Android 8.1).
+Protocol can be found here: https://github.com/zh2x/BCI_Protocol or in the repository pdf file.
