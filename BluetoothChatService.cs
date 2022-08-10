@@ -40,8 +40,10 @@ namespace com.xamarin.samples.bluetooth.bluetoothchat
         const string NAME_SECURE = "BluetoothChatSecure";
         const string NAME_INSECURE = "BluetoothChatInsecure";
 
-        static UUID MY_UUID_SECURE = UUID.FromString("fa87c0d0-afac-11de-8a39-0800200c9a66");
-        static UUID MY_UUID_INSECURE = UUID.FromString("8ce255c0-200a-11e0-ac64-0800200c9a66");
+        //static UUID MY_UUID_SECURE = UUID.FromString("fa87c0d0-afac-11de-8a39-0800200c9a66");
+        static UUID MY_UUID_SECURE = UUID.FromString("00001101-0000-1000-8000-00805f9b34fb");
+        //static UUID MY_UUID_INSECURE = UUID.FromString("8ce255c0-200a-11e0-ac64-0800200c9a66");
+        static UUID MY_UUID_INSECURE = UUID.FromString("00001101-0000-1000-8000-00805f9b34fb");
 
         BluetoothAdapter btAdapter;
         Handler handler;

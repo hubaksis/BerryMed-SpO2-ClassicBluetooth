@@ -19,7 +19,7 @@
     <string name="ok">Ok</string>
     
     <!--  BluetoothChat -->
-    <string name="app_name">BluetoothChat</string>
+    <string name="app_name">BerryMed SPO2 checker</string>
     <string name="intro_message">
         <![CDATA[
         

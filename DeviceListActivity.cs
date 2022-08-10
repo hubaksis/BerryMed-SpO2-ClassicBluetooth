@@ -98,7 +98,8 @@ namespace com.xamarin.samples.bluetooth.bluetoothchat
                 FindViewById(Resource.Id.title_paired_devices).Visibility = ViewStates.Visible;
                 foreach (var device in pairedDevices)
                 {
-                    pairedDevicesArrayAdapter.Add(device.Name + "\n" + device.Address);
+                    if(device.Name.Contains("Berry"))
+                        pairedDevicesArrayAdapter.Add(device.Name + "\n" + device.Address);
                 }
             }
             else

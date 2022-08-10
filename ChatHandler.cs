@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -47,8 +48,20 @@ namespace com.xamarin.samples.bluetooth.bluetoothchat
                         break;
                     case Constants.MESSAGE_READ:
                         var readBuffer = (byte[])msg.Obj;
-                        var readMessage = Encoding.ASCII.GetString(readBuffer);
-                        chatFrag.conversationArrayAdapter.Add($"{chatFrag.connectedDeviceName}: {readMessage}");
+                        //var readMessage = Encoding.ASCII.GetString(readBuffer);
+                                                
+
+
+                        //chatFrag.conversationArrayAdapter[chatFrag.conversationArrayAdapter.Count - 1] = DateTime.Now.ToString();
+
+                        //var readMessage = "spO2 = " + DateTime.Now.ToString() + "/r/n";
+                        var readMessage = parseBytes(readBuffer);
+                        if(!string.IsNullOrEmpty(readMessage))
+                        {
+                            chatFrag.conversationArrayAdapter.Clear();
+                            chatFrag.conversationArrayAdapter.Add($"{chatFrag.connectedDeviceName}: {readMessage}");
+                        }
+
                         break;
                     case Constants.MESSAGE_DEVICE_NAME:
                         chatFrag.connectedDeviceName = msg.Data.GetString(Constants.DEVICE_NAME);
@@ -60,6 +73,19 @@ namespace com.xamarin.samples.bluetooth.bluetoothchat
                     case Constants.MESSAGE_TOAST:
                         break;
                 }
+            }
+
+            private string parseBytes(byte[] data)
+            {
+                for(int i = 0; i < data.Length; i++)                
+                {
+                    if ((data[i] & 128) == 128 && i < data.Length - 5)
+                    {
+                        return "spO2=" + data[i+4];
+                    }
+                }
+
+                return String.Empty;
             }
         }
     }
