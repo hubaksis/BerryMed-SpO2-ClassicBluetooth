@@ -18,7 +18,7 @@ using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
 
-namespace com.xamarin.samples.bluetooth.bluetoothchat
+namespace com.xamarin.samples.bluetooth.spo2
 {
     /// <summary>
     /// This is the main Activity that displays the current chat session.

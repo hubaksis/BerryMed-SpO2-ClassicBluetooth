@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("com.xamarin.samples.bluetooth.bluetoothchat.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("com.xamarin.samples.bluetooth.spo2.Resource", IsApplication=true)]
 
-namespace com.xamarin.samples.bluetooth.bluetoothchat
+namespace com.xamarin.samples.bluetooth.spo2
 {
 	
 	

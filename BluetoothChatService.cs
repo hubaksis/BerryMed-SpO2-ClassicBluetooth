@@ -22,7 +22,7 @@ using Android.Util;
 using Java.Lang;
 using Java.Util;
 
-namespace com.xamarin.samples.bluetooth.bluetoothchat
+namespace com.xamarin.samples.bluetooth.spo2
 {
     /// <summary>
     /// <para>This class does all the work for setting up and managing Bluetooth

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace com.xamarin.samples.bluetooth.bluetoothchat
+namespace com.xamarin.samples.bluetooth.spo2
 {
     public static class Constants
     {

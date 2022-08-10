@@ -4,7 +4,7 @@ using Android.Content;
 using Android.Support.Design.Widget;
 using Android.Support.V4.App;
 using Android.Support.V4.Content;
-using AppResource = com.xamarin.samples.bluetooth.bluetoothchat.Resource;
+using AppResource = com.xamarin.samples.bluetooth.spo2.Resource;
 using AndroidResource = Android.Resource;
 
 namespace com.xamarin.samples.bluetooth
