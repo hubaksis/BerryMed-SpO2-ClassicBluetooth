@@ -1,5 +1,5 @@
 
-Based on Xamarin.Android - Bluetooth Chat example
+Based on [Xamarin.Android - Bluetooth Chat](https://docs.microsoft.com/en-us/samples/xamarin/monodroid-samples/bluetoothchat/) example, source code [here](https://github.com/xamarin/monodroid-samples/tree/main/BluetoothChat)
 
 This is an app that shows SpO2 from an old classic bluetooth device BerryMed without a screen.
 
