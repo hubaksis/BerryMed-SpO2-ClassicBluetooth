@@ -8,7 +8,7 @@ This is an app that shows SpO2 from an old classic bluetooth device BerryMed wit
 
 Protocol can be found here: https://github.com/zh2x/BCI_Protocol or in this [pdf file](BCI%20Protocol%20V1.2.pdf).
 
-Huge thanks to Zhu Xiaoxin who responded to my email and said ~~wrong way!!~~ "The sync bit is the Most Significant Bit, not the Least Significant Bit." Keep it in mind.
+Huge thanks to technical support from Shanghai Berry Medical who responded to my email and said ~~wrong way!!~~ "The sync bit is the Most Significant Bit, not the Least Significant Bit." Keep it in mind.
 
 
 This is a quick half an hour project to get SpO2 level only from this device. No fancy interface, no other data.
